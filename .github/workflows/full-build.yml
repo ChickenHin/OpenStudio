@@ -1,24 +1,24 @@
 name: Full Build
 
 on:
-  push:
-    branches:
-      - develop
-      - master
-      - os-4.0-dev
-    tags:
-      - "v*"
-  schedule:
-    # Run nightly at 8 PM ET (midnight UTC during EST, 1 AM UTC during EDT)
-    # Using 1 AM UTC to cover EDT (daylight saving time)
-    - cron: '0 1 * * *'
-  pull_request:
-    branches:
-      - develop
-      - master
-      - os-4.0-dev
+  # push:
+  #   branches:
+  #     - develop
+  #     - master
+  #     - os-4.0-dev
+  #   tags:
+  #     - "v*"
+  # schedule:
+  #   # Run nightly at 8 PM ET (midnight UTC during EST, 1 AM UTC during EDT)
+  #   # Using 1 AM UTC to cover EDT (daylight saving time)
+  #   - cron: '0 1 * * *'
+  # pull_request:
+  #   branches:
+  #     - develop
+  #     - master
+  #     - os-4.0-dev
 
-    types: [ opened, reopened, synchronize ]
+  #   types: [ opened, reopened, synchronize ]
   workflow_dispatch:
     inputs:
       publish_to_s3:
