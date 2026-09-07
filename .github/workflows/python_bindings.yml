@@ -1,14 +1,14 @@
 name: Python Bindings
 
 on:
-  push:
-    branches: [ master, actions_pypi ]
-    # Sequence of patterns matched against refs/tags
-    tags:
-      - 'v*' # Push events to matching v*, i.e. v1.0, v20.15.10
-  pull_request:
-    branches: [ master, actions_pypi ]
-    types: [ opened, reopened, synchronize ]
+  # push:
+  #   branches: [ master, actions_pypi ]
+  #   # Sequence of patterns matched against refs/tags
+  #   tags:
+  #     - 'v*' # Push events to matching v*, i.e. v1.0, v20.15.10
+  # pull_request:
+  #   branches: [ master, actions_pypi ]
+  #   types: [ opened, reopened, synchronize ]
   workflow_dispatch:
 
 env:
