@@ -1,8 +1,8 @@
 name: cppcheck
 
 on:
-  push:
-    branches: [ master, develop ]
+  # push:
+  #   branches: [ master, develop ]
 
 jobs:
   build:
